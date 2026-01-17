@@ -1,7 +1,7 @@
 streamlit
 PyPDF2
-groq
-python-dotenv
-scikit-learn
 sentence-transformers
-numpy
+scikit-learn
+langchain
+langchain-groq
+langchain-core
