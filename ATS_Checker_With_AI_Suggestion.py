@@ -33,13 +33,35 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- SIDEBAR: API KEY & SETTINGS ---
+# with st.sidebar:
+#     st.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=100)
+#     st.title("Settings")
+    
+#     # Secure API Key Input
+#     api_key = st.text_input("Enter Groq API Key:", type="password")
+    
+    
+#     st.markdown("---")
+#     st.markdown("### How it works")
+#     st.markdown("1. Upload your Resume (PDF)")
+#     st.markdown("2. Paste the Job Description")
+#     st.markdown("3. Get a Match Score instantly")
+#     st.markdown("4. Ask AI to fix gaps")
+# --- SIDEBAR: API KEY & SETTINGS ---
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=100)
     st.title("Settings")
     
-    # Secure API Key Input
-    api_key = st.text_input("Enter Groq API Key:", type="password")
+    # 1. Try to get the key from Streamlit Secrets
+    if "GROQ_API_KEY" in st.secrets:
+        st.success("✅ API Key loaded from Secrets")
+        api_key = st.secrets["GROQ_API_KEY"]
     
+    # 2. If not found in Secrets, ask the user to input it
+    else:
+        api_key = st.text_input("Enter Groq API Key:", type="password")
+        if not api_key:
+            st.warning("⚠️ API Key required to run AI Analysis")
     
     st.markdown("---")
     st.markdown("### How it works")
@@ -158,4 +180,5 @@ if st.button("Analyze Resume"):
     else:
 
         st.warning("Please upload a resume and paste a job description first!")
+
 
