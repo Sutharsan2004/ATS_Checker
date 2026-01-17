@@ -43,4 +43,8 @@ If you want to run this project on your own machine:
     ```bash
     streamlit run app.py
     ```
+4 Screenshots
+![ATS_Output1](https://github.com/user-attachments/assets/f75d92c2-7286-4825-b842-0c934718f7b6)
+![ATS_Outup3](https://github.com/user-attachments/assets/e92e9a6d-c74e-4ce2-ae42-3fab9f01a3f5)
+![ATS_Output2](https://github.com/user-attachments/assets/1a599ac8-52bd-4c26-9165-535e82d4de8d)
 
