@@ -142,7 +142,7 @@ if st.button("Analyze Resume"):
             st.markdown(
                 f"""
                 <div style="background-color: {score_color}; color: white; padding: 20px; border-radius: 10px; text-align: center;">
-                    <h1 style="margin:0;">Match Score: {score}%</h1>
+                    <h1 style="margin:0;">Match Score: {score:.2f}%</h1>
                     <p style="margin:0;">{("Excellent Match" if score >= 70 else "Good Match" if score >= 50 else "Needs Improvement")}</p>
                 </div>
                 """, 
@@ -158,3 +158,4 @@ if st.button("Analyze Resume"):
     else:
 
         st.warning("Please upload a resume and paste a job description first!")
+
