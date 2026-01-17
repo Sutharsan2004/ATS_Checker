@@ -5,7 +5,7 @@
 ![LangChain](https://img.shields.io/badge/LangChain-🦜-green)
 ![Groq](https://img.shields.io/badge/Groq-Llama3-orange)
 
-**Live Demo:** [Click here to use the App]((https://sutharsan2004-ats-checker-ats-checker-with-ai-suggestion-sezexm.streamlit.app/))
+**Live Demo:** ((https://sutharsan2004-ats-checker-ats-checker-with-ai-suggestion-sezexm.streamlit.app/))
 
 ## 💡 Overview
 Applying for jobs can feel like sending applications into a black hole. This **AI-Powered ATS (Application Tracking System) Analyst** helps job seekers optimize their resumes by comparing them against specific job descriptions. 
